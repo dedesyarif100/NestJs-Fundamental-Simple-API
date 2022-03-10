@@ -15,10 +15,10 @@ import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
     controllers: [FilekitaController],
     providers: [
         FilekitaService,
-        {
-            provide: APP_GUARD,
-            useClass: JwtAuthGuard,
-        },
+        // {
+        //     provide: APP_GUARD,
+        //     useClass: JwtAuthGuard,
+        // },
     ],
     exports: [FilekitaService]
 })

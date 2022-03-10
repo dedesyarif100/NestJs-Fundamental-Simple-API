@@ -53,7 +53,6 @@ export class FilekitaController {
     //     return `ini controller detail ${id}`;
     // }
 
-    // @UseGuards(JwtAuthGuard)
     @Get(':id')
     lihatDetail(@Param('id') id: string) {
         return this.FilekitaService.lihatPerRecord(id);
